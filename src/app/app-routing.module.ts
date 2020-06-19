@@ -5,8 +5,9 @@ import { DisplayuserComponent } from './displayuser/displayuser.component';
 
 
 const routes: Routes = [
+  {path:'',redirectTo:'/dashboard',pathMatch:'full'},
   {path: 'dashboard',component: DashboardComponent},
-  {path: 'username',component: DisplayuserComponent}
+  {path: 'username/:name',component: DisplayuserComponent}
 ];
 
 @NgModule({
